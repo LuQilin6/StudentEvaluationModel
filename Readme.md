@@ -17,8 +17,7 @@ pip install -r requirements.txt
 
 Before running the evaluation pipeline, you must configure the necessary API keys:
 
-* 
-**LLM Service:** Open `read_and_analyze_application.ipynb` and insert your OpenAI API key and endpoint URL in the request configuration section.
+* **LLM Service:** Open `read_and_analyze_application.ipynb` and insert your OpenAI API key and endpoint URL in the request configuration section.
 
 
 * **OCR Service:** Open `utils.py` and input your Baidu OCR `API_KEY` and `SECRET_KEY` to enable text extraction from scanned transcripts.
@@ -33,20 +32,16 @@ Before running the evaluation pipeline, you must configure the necessary API key
 
 This notebook serves as the primary engine for the evaluation process. It performs the following operations:
 
-1. 
-**Data Ingestion:** Reads student metadata from Excel files and raw PDF applications.
+1. **Data Ingestion:** Reads student metadata from Excel files and raw PDF applications.
 
 
-2. 
-**OCR Extraction:** Utilizes functions from `utils.py` to extract text from scanned images or transcripts.
+2. **OCR Extraction:** Utilizes functions from `utils.py` to extract text from scanned images or transcripts.
 
 
-3. 
-**LLM Scoring:** Sends parsed profiles to the LLM to generate scores for criteria such as GPA, Math Ability, and Research Potential, along with a "Pass/Fail" recommendation.
+3. **LLM Scoring:** Sends parsed profiles to the LLM to generate scores for criteria such as GPA, Math Ability, and Research Potential, along with a "Pass/Fail" recommendation.
 
 
-4. 
-**Export:** Consolidates all evaluations into a structured CSV file (`summary.csv`).
+4. **Export:** Consolidates all evaluations into a structured CSV file (`summary.csv`).
 
 
 
@@ -75,8 +70,7 @@ This notebook processes the CSV output from Step 1 to provide statistical insigh
 
 ## File Overview
 
-* 
-**`read_and_analyze_application.ipynb`**: The main pipeline for reading PDFs, executing OCR, and querying the LLM.
+* **`read_and_analyze_application.ipynb`**: The main pipeline for reading PDFs, executing OCR, and querying the LLM.
 
 
 * **`analyze_csv.ipynb`**: Tools for visualizing and auditing the evaluation results.
